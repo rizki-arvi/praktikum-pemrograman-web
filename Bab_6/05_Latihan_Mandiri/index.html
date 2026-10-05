@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Total Belanja dan Diskon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Kalkulator Total Belanja &amp; Diskon</h1>
+    <p class="subtitle">Tambahkan barang, lalu JavaScript menghitung subtotal, diskon bertingkat, dan total bayar.</p>
+
+    <section class="panel">
+      <form id="formBarang">
+        <label for="namaBarang">Nama Barang</label>
+        <input id="namaBarang" type="text" placeholder="Contoh: Buku Tulis" required>
+        <div class="grid">
+          <div>
+            <label for="harga">Harga (Rp)</label>
+            <input id="harga" type="number" min="0" value="10000" required>
+          </div>
+          <div>
+            <label for="jumlah">Jumlah</label>
+            <input id="jumlah" type="number" min="1" value="1" required>
+          </div>
+        </div>
+        <button type="submit">Tambah Barang</button>
+        <button type="button" id="btnReset" class="secondary">Kosongkan Keranjang</button>
+      </form>
+
+      <article id="hasil" class="result"></article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

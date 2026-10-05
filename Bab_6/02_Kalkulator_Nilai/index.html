@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Nilai Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="intro">
+      <p class="eyebrow">Studi Kasus JavaScript Fundamental</p>
+      <h1>Kalkulator Nilai Mahasiswa</h1>
+      <p>Masukkan nilai tugas, UTS, dan UAS. JavaScript akan menghitung nilai akhir, grade, dan status kelulusan.</p>
+    </section>
+
+    <section class="panel">
+      <form id="formNilai">
+        <label for="nama">Nama Mahasiswa</label>
+        <input id="nama" type="text" value="Dina" required>
+
+        <div class="grid">
+          <div>
+            <label for="tugas">Tugas</label>
+            <input id="tugas" type="number" min="0" max="100" value="82" required>
+          </div>
+          <div>
+            <label for="uts">UTS</label>
+            <input id="uts" type="number" min="0" max="100" value="78" required>
+          </div>
+          <div>
+            <label for="uas">UAS</label>
+            <input id="uas" type="number" min="0" max="100" value="88" required>
+          </div>
+        </div>
+
+        <button type="submit">Hitung Nilai</button>
+      </form>
+
+      <article id="hasil" class="result">
+        <h2>Hasil Perhitungan</h2>
+        <p>Klik tombol <strong>Hitung Nilai</strong> untuk melihat hasil.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Tailwind</title>
+  <!-- Tailwind via Play CDN (perlu internet) - tailwindcss.com -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <header class="flex flex-col items-start gap-3 bg-white px-[6%] py-4 shadow md:flex-row md:items-center md:justify-between">
+    <a href="#" class="text-xl font-extrabold text-blue-700">KelasWeb</a>
+    <nav class="flex flex-col gap-2 font-bold text-slate-500 md:flex-row md:gap-4">
+      <a href="#fitur">Fitur</a>
+      <a href="#materi">Materi</a>
+      <a href="#daftar">Daftar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid items-center gap-8 px-[6%] py-16 lg:grid-cols-2">
+      <div>
+        <p class="font-extrabold uppercase tracking-widest text-green-600">Pemrograman Berbasis Web</p>
+        <h1 class="my-3 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">Bangun halaman web responsif untuk semua perangkat.</h1>
+        <p class="max-w-xl text-lg leading-relaxed text-slate-500">Landing page sederhana ini dibuat dengan utility class Tailwind tanpa menulis file CSS sendiri.</p>
+        <a href="#daftar" class="mt-4 inline-block rounded-xl bg-green-600 px-5 py-3 font-extrabold text-white hover:bg-green-700">Ikuti Praktikum</a>
+      </div>
+      <div class="min-h-[330px] rounded-3xl bg-slate-900 p-4 shadow-2xl">
+        <div class="mb-5 h-4 w-24 rounded-full bg-gradient-to-r from-red-500 via-yellow-400 to-green-500"></div>
+        <div class="h-9 rounded-xl bg-blue-100"></div>
+        <div class="my-4 h-28 rounded-xl bg-gradient-to-br from-blue-700 to-green-500"></div>
+        <div class="grid gap-3 sm:grid-cols-3"><div class="h-14 rounded-xl bg-blue-100"></div><div class="h-14 rounded-xl bg-blue-100"></div><div class="h-14 rounded-xl bg-blue-100"></div></div>
+      </div>
+    </section>
+
+    <section id="fitur" class="grid gap-4 px-[6%] pb-16 md:grid-cols-3">
+      <article class="rounded-3xl bg-white p-6 shadow"><h2 class="text-xl font-bold">Flexbox</h2><p class="mt-2 text-slate-500">Susun navigasi dan komponen satu dimensi.</p></article>
+      <article class="rounded-3xl bg-white p-6 shadow"><h2 class="text-xl font-bold">CSS Grid</h2><p class="mt-2 text-slate-500">Layout dua dimensi yang fleksibel.</p></article>
+      <article class="rounded-3xl bg-white p-6 shadow"><h2 class="text-xl font-bold">Media Query</h2><p class="mt-2 text-slate-500">Prefix sm:, md:, lg: menggantikan media query manual.</p></article>
+    </section>
+
+    <section id="materi" class="grid gap-4 px-[6%] pb-16 lg:grid-cols-[320px_1fr]">
+      <aside class="rounded-3xl bg-white p-6 shadow"><h2 class="text-xl font-bold">Checklist</h2>
+        <ul class="mt-2 list-disc pl-5 text-slate-500"><li>Viewport meta tag</li><li>Mobile-first</li><li>Inspect responsive mode</li></ul></aside>
+      <article class="rounded-3xl bg-white p-6 shadow"><h2 class="text-xl font-bold">Target Praktikum</h2><p class="mt-2 text-slate-500">Membuat landing page responsif dengan framework utility-first dan membandingkannya dengan CSS murni.</p></article>
+    </section>
+  </main>
+
+  <footer id="daftar" class="px-[6%] py-8 text-center text-slate-500">© 2026 Kelas Web Dasar — Tailwind</footer>
+</body>
+</html>

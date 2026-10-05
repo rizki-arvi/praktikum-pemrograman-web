@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f8ff; color: #172033; }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 8%;
+  background: white;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, .08);
+}
+.brand { font-weight: 800; color: #1d4ed8; text-decoration: none; font-size: 1.25rem; }
+.nav-menu { display: flex; gap: 1rem; flex-wrap: wrap; }
+.nav-menu a { text-decoration: none; color: #334155; font-weight: 600; }
+.hero { padding: 5rem 8%; max-width: 760px; }
+.hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 0 0 1rem; }
+.hero p { font-size: 1.15rem; line-height: 1.7; }
+button { background: #16a34a; color: white; border: 0; padding: .85rem 1.1rem; border-radius: .75rem; }
+@media (max-width: 640px) {
+  .site-header { flex-direction: column; align-items: flex-start; }
+  .nav-menu { flex-direction: column; }
+}
